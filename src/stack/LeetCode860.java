@@ -2,7 +2,7 @@ package stack;
 
 /**
  * @author 张璐
- * @description &{description} TODO 璐哥 写点注释吧 !!!!!
+ * @description &{description}
  * @date 2020/12/9
  */
 public class LeetCode860 {

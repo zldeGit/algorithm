@@ -24,12 +24,11 @@ public class StackSort {
 	public static void main(String[] args) {
 		Stack<Integer> stack = new Stack<>();
 		Random random = new Random(100);
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 100; i++) {
 			stack.push(random.nextInt());
-
 		}
 		StackSort stackSort = new StackSort();
-		stackSort.sort2(stack);
+		stackSort.sort3(stack);
 	}
 
 
@@ -43,6 +42,17 @@ public class StackSort {
 			help.push(pop);
 		}
 		System.out.println(help);
+	}
 
+	public void sort3(Stack<Integer> stack){
+		Stack<Integer> help=new Stack<>();
+		while (!stack.empty()) {
+			Integer pop = stack.pop();
+			while (!help.empty() && help.peek() > pop) {
+				stack.push(help.pop());
+			}
+			help.push(pop);
+		}
+		System.out.println(help);
 	}
 }

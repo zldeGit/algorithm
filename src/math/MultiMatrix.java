@@ -24,6 +24,32 @@ public class MultiMatrix {
 		}
 		return res;
 	}
+
+	public int c3(int n) {
+		if (n < 1) {
+			return 0;
+		}
+		if (n == 1 || n == 2 || n == 3) {
+			return n;
+		}
+		int[][] base = { { 1, 1, 0 }, { 0, 0, 1 }, { 1, 0, 0 } };
+		int[][] res = matrixPower(base, n - 3);
+		return 3 * res[0][0] + 2 * res[1][0] + res[2][0];
+	}
+
+
+	public int c32(int n) {
+		if (n < 1) {
+			return 0;
+		}
+		if (n == 1 || n == 2 || n == 3) {
+			return n;
+		}
+		int[][] base = { { 1, 0, 1 }, { 1, 0, 0 }, { 0, 1, 0 } };
+		int[][] res = matrixPower(base, n - 3);
+		return 3 * res[0][0] + 2 * res[1][0] + res[2][0];
+	}
+
 	public int[][] muliMatrix(int[][] m1, int[][] m2) {
 		int[][] res = new int[m1.length][m2[0].length];
 		for (int i = 0; i < m1.length; i++) {
@@ -44,8 +70,10 @@ public class MultiMatrix {
 //			System.out.println(Arrays.toString(ints2));
 //		}
 //		int jump = multiMatrix.getJump(41);
-		int momo = multiMatrix.momo(6);
-		System.out.println("jump = " + momo);
+		int c3 = multiMatrix.c3(10);
+		System.out.println("c3 = " + c3);
+		int c32 = multiMatrix.c32(10);
+		System.out.println("c32 = " + c32);;
 
 	}
 

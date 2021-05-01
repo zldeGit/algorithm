@@ -47,8 +47,10 @@ public class MaxWindows {
 	}
 
 	public static void main(String[] args) {
-		MaxWindows maxWindows = new MaxWindows();
-		int[] s = {4,3,5,4,3,3,6,7};
-		maxWindows.getMaxWindows(s, 3);
+		int i = 100;
+		int i1 = ~i + 1;
+		System.out.println(i1);
 	}
 }
+
+

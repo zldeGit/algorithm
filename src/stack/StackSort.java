@@ -2,6 +2,7 @@ package stack;
 
 import java.util.Random;
 import java.util.Stack;
+import java.util.UUID;
 
 /**
  * @author 张璐
@@ -29,6 +30,10 @@ public class StackSort {
 		}
 		StackSort stackSort = new StackSort();
 		stackSort.sort3(stack);
+		String uuid = "asdafedlksghakjsdhf";
+		String s = uuid.toString() + "123.jpeg";
+		String substring = s.substring(s.indexOf(uuid.toString())+uuid.length(), s.indexOf(".jpeg"));
+		System.out.println("substring = " + substring);
 	}
 
 

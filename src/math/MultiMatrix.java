@@ -8,10 +8,10 @@ import java.util.Arrays;
  * @date 2021/2/3
  */
 public class MultiMatrix {
-	//矩阵的乘方
+	 	//矩阵的乘方
 	public int[][] matrixPower(int[][] m, int p) {
 		int[][] res = new int[m.length][m[0].length];
-// 先把res 设为单位矩阵，相当于整数中的1
+		// 先把res 设为单位矩阵，相当于整数中的1
 		for (int i = 0; i < res.length; i++) {
 			res[i][i] = 1;
 		}
@@ -62,6 +62,18 @@ public class MultiMatrix {
 		return res;
 	}
 
+	public int[][] multiMatrix(int[][] m1, int[][] m2) {
+		int[][] result = new int[m1.length][m2[0].length];
+		for (int i = 0; i < m1.length; i++) {
+			for (int j = 0; j < m2[0].length; j++) {
+				for (int k = 0; k < m1[0].length; k++) {
+					result[i][j] += m1[i][k] * m2[k][j];
+				}
+			}
+		}
+		return result;
+	}
+
 	public static void main(String[] args) {
 		MultiMatrix multiMatrix = new MultiMatrix();
 //		int[][] ints = {{1, 2}, {3, 4}};
@@ -73,8 +85,7 @@ public class MultiMatrix {
 		int c3 = multiMatrix.c3(10);
 		System.out.println("c3 = " + c3);
 		int c32 = multiMatrix.c32(10);
-		System.out.println("c32 = " + c32);;
-
+		System.out.println("c32 = " + c32);
 	}
 
 	public int getJump(int n) {

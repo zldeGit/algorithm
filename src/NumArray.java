@@ -1,8 +1,3 @@
-import com.sun.org.apache.bcel.internal.generic.RET;
-
-import java.util.*;
-import java.util.concurrent.ThreadPoolExecutor;
-
 class NumArray {
 	private int MAXN;
 	private int[] arr;

@@ -1,23 +1,31 @@
 import java.util.Stack;
 import java.util.TreeMap;
+import java.util.concurrent.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @author 张璐
  * @date 2021/2/18
  */
 public class Test {
-	public static void main(String[] args) {
-//		user[] users = new user[]{new user(1, "1"),
-//				new user(2, "2"),
-//				new user(3, "3"),
-//				new user(4, "4"),
-//				new user(5, "5")
-//		};
-//		int[] ints = new int[]{5, 1, 4, 3, 2};
-//		test();
-
-		int[] ints = new int[]{3, 6, 0, 3, 5};
-		boolean pattern = find132pattern(ints);
+	public static void main(String[] args) throws ExecutionException, InterruptedException {
+//		AtomicInteger integer = new AtomicInteger(0);
+//		ExecutorService executorService = Executors.newFixedThreadPool(6);
+//		Semaphore semaphore = new Semaphore(0);
+//		Object o = new Object();
+//		for (int i = 0; i < 6; i++) {
+//			int finalI = i;
+//			executorService.submit(() -> {
+//
+//			});
+//		}
+		String url = "123";
+		try {
+			url = "456";
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		System.out.println(url);
 	}
 
 	public static void test() {

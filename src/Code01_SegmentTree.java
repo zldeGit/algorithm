@@ -243,7 +243,6 @@ public class Code01_SegmentTree {
 
 		System.out.println("对数器测试开始...");
 		System.out.println("测试结果 : " + (test() ? "通过" : "未通过"));
-
 	}
 
 }

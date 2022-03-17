@@ -1,7 +1,6 @@
 package leetCode;
 
 import java.util.LinkedList;
-import java.util.Stack;
 
 public class TreeNode {
 	public int val;

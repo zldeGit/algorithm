@@ -1,7 +1,6 @@
 package queue;
 
 import java.util.NoSuchElementException;
-import java.util.Queue;
 import java.util.Stack;
 
 /**

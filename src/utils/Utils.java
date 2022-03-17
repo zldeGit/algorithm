@@ -39,4 +39,21 @@ public  class Utils {
 		}
 		return head.next;
 	}
+
+	public static int[] generateRandomIntArr(int maxsize, int maxValue) {
+		int[] arr = new int[(int) (Math.random() * (maxsize + 1))];
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = (int) (Math.random() * (maxValue + 1)) - (int) (Math.random() * (maxValue + 1));
+		}
+		return arr;
+	}
+
+	public static void swap(int a, int b, int[] arr) {
+		if (a == b) {
+			return;
+		}
+		arr[a] ^= arr[b];
+		arr[b] ^= arr[a];
+		arr[a] ^= arr[b];
+	}
 }

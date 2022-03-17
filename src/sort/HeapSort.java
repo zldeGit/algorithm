@@ -1,6 +1,5 @@
 package sort;
 
-import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
@@ -51,7 +50,6 @@ public class HeapSort {
 		arr[a] = arr[a] ^ arr[b];
 	}
 
-	@Test
 	public void test() {
 		int[] arr = new int[]{12, 2346, 1, 123, 6, 1, 2, 621346, 12, 1, 3};
 		heapSort(arr);

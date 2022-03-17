@@ -1,6 +1,6 @@
 package sort;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
@@ -103,7 +103,6 @@ public class QuickSort {
 		arr[a] = arr[a] ^ arr[b];
 	}
 
-	@Test
 	public void testHelanguoqi() throws UnsupportedEncodingException {
 		int[] ints = {1, 3, 4, 8, 1, 6, 3, 6, 89, 1111};
 		recursiveQuickSort(ints, 0, ints.length - 1);

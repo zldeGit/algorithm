@@ -25,24 +25,19 @@ public class _11_树_二叉树遍历 {
 
 	public static void LDR(TreeNode node) {
 		LinkedList<TreeNode> stack = new LinkedList<TreeNode>();
-		stack.offer(node);
-		while (!stack.isEmpty()) {
-			TreeNode treeNode = stack.peekLast();
-			if (treeNode.left == null) {
-				System.out.println(treeNode.val);
-				stack.pollLast();
-			} else {
-				stack.offer(treeNode.left);
-				continue;
+		while (!stack.isEmpty() || node != null) {
+			while (node != null) {
+				stack.push(node);
+				node = node.left;
 			}
-			if (treeNode.right != null) {
-				stack.offer(treeNode.right);
-			}
+			node = stack.pop();
+			System.out.println(node.val);
+			node = node.right;
 		}
 	}
 
 	public static void main(String[] args) {
-		Integer[] integers = {1, null, 2, null, null, 3, 4};
+		Integer[] integers = {4, 2, 6,1,3 , 5, 7};
 		TreeNode treeNode = Utils.createTreeNode(integers);
 		LDR(treeNode);
 	}

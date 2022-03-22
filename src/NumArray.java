@@ -1,3 +1,7 @@
+import java.util.concurrent.Semaphore;
+import java.util.concurrent.locks.LockSupport;
+import java.util.concurrent.locks.ReentrantLock;
+
 class NumArray {
 	private int MAXN;
 	private int[] arr;
@@ -102,6 +106,36 @@ class NumArray {
 			ans += query(L, R, mid + 1, r, rt << 1 | 1);
 		}
 		return ans;
+	}
+
+	public static void main(String[] args) throws InterruptedException {
+		Semaphore semaphore = new Semaphore(1);
+		Semaphore semaphore2 = new Semaphore(0);
+		new Thread(()->{
+			while (true){
+				try {
+					semaphore.acquire();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				System.out.print("-");
+				semaphore2.release();
+			}
+		}).start();
+		new Thread(()->{
+			while (true) {
+
+				try {
+					semaphore2.acquire();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				System.out.print("|");
+				semaphore.release();
+			}
+		}).start();
+
+
 	}
 
 

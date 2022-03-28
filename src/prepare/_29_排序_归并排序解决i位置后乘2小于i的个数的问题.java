@@ -11,31 +11,7 @@ import java.util.Arrays;
 public class _29_排序_归并排序解决i位置后乘2小于i的个数的问题 {
 	//先计算再merge TODO
 	public static int merge(int[] arr, int L, int M, int R) {
-		int leftL = L;
-		int leftR = M - 1;
-		int rightL = M;
-		int rightR = R;
-		int[] help = new int[R - L + 1];
-		int i = 0;
 		int ans = 0;
-		while (leftL <= leftR && rightL <= rightR) {
-			if (arr[rightL] <= arr[leftL]) {
-				help[i++] = arr[rightL++];
-			} else {
-				help[i++] = arr[leftL];
-				ans += arr[leftL] * (rightR - rightL + 1);
-				leftL++;
-			}
-		}
-		while (rightL <= rightR) {
-			help[i++] = arr[rightL++];
-		}
-		while (leftL <= leftR) {
-			help[i++] = arr[leftL++];
-		}
-		for (int j = 0; j < help.length; j++) {
-			arr[j + L] = help[j];
-		}
 		return ans; 
 	}
 
@@ -84,4 +60,12 @@ public class _29_排序_归并排序解决i位置后乘2小于i的个数的问�
 			}
 		}
 	}
+
+	/*
+	*
+	*
+	*
+ ["http://source.wengegroup.com/mam2/video_cut_623da0d1e4b01894022cd3b3.mp4","mam2"]
+	*
+	* */
 }

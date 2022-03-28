@@ -56,4 +56,13 @@ public  class Utils {
 		arr[b] ^= arr[a];
 		arr[a] ^= arr[b];
 	}
+
+	public static void swap(int a, int b, Object[] arr) {
+		if (a == b) {
+			return;
+		}
+		Object temp = arr[a];
+		arr[a] = arr[b];
+		arr[b] = temp;
+	}
 }

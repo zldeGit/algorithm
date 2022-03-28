@@ -48,6 +48,13 @@ public  class Utils {
 		return arr;
 	}
 
+	public static int[] generateRandomPosIntArr(int maxsize, int maxValue) {
+		int[] arr = new int[(int) (Math.random() * (maxsize + 1))];
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = (int) (Math.random() * (maxValue + 1));
+		}
+		return arr;
+	}
 	public static void swap(int a, int b, int[] arr) {
 		if (a == b) {
 			return;

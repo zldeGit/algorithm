@@ -13,6 +13,7 @@ public class _15_树_用先序遍历和中序遍历构建二叉树 {
 	public static TreeNode getByDLR(int[] preorder, int[] inorder) {
 		HashMap<Integer, Integer> preMap = new HashMap<>();
 		HashMap<Integer, Integer> inMap = new HashMap<>();
+
 		for (int i = 0; i < preorder.length; i++) {
 			preMap.put(preorder[i], i);
 			inMap.put(inorder[i], i);

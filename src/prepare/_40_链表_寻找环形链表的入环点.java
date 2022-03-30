@@ -2,9 +2,6 @@ package prepare;
 
 import entity.ListNode;
 
-import java.util.concurrent.locks.ReadWriteLock;
-import java.util.concurrent.locks.ReentrantReadWriteLock;
-
 /**
  * @author 张璐
  * @date 2022/3/29

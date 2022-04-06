@@ -17,4 +17,5 @@ public class _19_树_路径总和 {
 		if(root.left==null&&root.right==null && curSum== targetSum) return true;
 		return hasSum(root.left,targetSum,curSum)||hasSum(root.right,targetSum,curSum);
 	}
+
 }

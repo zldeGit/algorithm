@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * @author 张璐
- * @date 2022/8/2
+ * @date 2022/8/2 日常修改
  */
 public class _53_并查集 {
 	public static class Node<V> {

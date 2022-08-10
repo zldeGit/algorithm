@@ -1,4 +1,4 @@
-package class06;
+package src.class06;
 
 // 测试链接：https://leetcode.com/problems/same-tree
 public class Code02_SameTree {

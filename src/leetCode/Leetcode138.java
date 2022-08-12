@@ -4,7 +4,7 @@ package leetCode;
  * @author 张璐
  * @date 2022/8/11
  */
-public class Leetcode138复制带随机指针的链表 {
+public class Leetcode138 {
 	public Node copyRandomList(Node head) {
 		if (head == null) {
 			return null;

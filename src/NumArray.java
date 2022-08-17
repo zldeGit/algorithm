@@ -134,8 +134,6 @@ class NumArray {
 				semaphore.release();
 			}
 		}).start();
-
-
 	}
 
 

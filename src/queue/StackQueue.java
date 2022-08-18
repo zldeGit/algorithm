@@ -5,7 +5,7 @@ import java.util.Stack;
 
 /**
  * @author 张璐
- * @description &{description} TODO 璐哥 写点注释吧 !!!!!
+ * @description &{description} 栈的实现
  * @date 2021/3/9
  */
 public class StackQueue  {

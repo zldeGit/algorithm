@@ -33,8 +33,12 @@ public class _15_树_用先序遍历和中序遍历构建二叉树 {
 		int leftLength = inOrderRootIndex - inL - 1;
 		int rightLength = inR - inOrderRootIndex - 1;
 		TreeNode root = new TreeNode(rootVal);
-		root.left = getByDLR(preorder, inMap, preL + 1, preL + 1 + leftLength, inL, inL + leftLength);
-		root.right = getByDLR(preorder, inMap, preR - rightLength, preR, inR - rightLength, inR);
+		if (leftLength>=0) {
+			root.left = getByDLR(preorder, inMap, preL + 1, preL + 1 + leftLength, inL, inL + leftLength);
+		}
+		if (rightLength>0) {
+			root.right = getByDLR(preorder, inMap, preR - rightLength, preR, inR - rightLength, inR);
+		}
 		return root;
 
 	}

@@ -62,7 +62,6 @@ public class _11_树_二叉树遍历 {
 			}
 		}
 		System.out.println();
-
 	}
 
 	public static void levelOrder(TreeNode node) {

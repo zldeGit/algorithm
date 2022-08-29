@@ -5,8 +5,6 @@ package class49;
 // 打败所有题解
 public class Problem_0440_KthSmallestInLexicographicalOrder {
 
-	public static int[] offset = { 0, 1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000 };
-
 	public static int[] number = { 0, 1, 11, 111, 1111, 11111, 111111, 1111111, 11111111, 111111111, 1111111111 };
 
 	public static int findKthNumber(int n, int k) {
@@ -14,7 +12,7 @@ public class Problem_0440_KthSmallestInLexicographicalOrder {
 		// 65237, 5位，len = 5
 		int len = len(n);
 		// 65237, 开头数字，6，first
-		int first = n / offset[len];
+		int first = n / (int) Math.pow(10,len - 1);
 		// 65237，左边有几个？
 		int left = (first - 1) * number[len];
 		int pick = 0;
@@ -23,9 +21,9 @@ public class Problem_0440_KthSmallestInLexicographicalOrder {
 			// k / a 向上取整-> (k + a - 1) / a
 			pick = (k + number[len] - 1) / number[len];
 			already = (pick - 1) * number[len];
-			return kth((pick + 1) * offset[len] - 1, len, k - already);
+			return kth((pick + 1) * (int) Math.pow(10,len - 1) - 1, len, k - already);
 		}
-		int mid = number[len - 1] + (n % offset[len]) + 1;
+		int mid = number[len - 1] + (n % (int) Math.pow(10,len - 1)) + 1;
 		if (k - left <= mid) {
 			return kth(n, len, k - left);
 		}
@@ -33,7 +31,7 @@ public class Problem_0440_KthSmallestInLexicographicalOrder {
 		len--;
 		pick = (k + number[len] - 1) / number[len] + first;
 		already = (pick - first - 1) * number[len];
-		return kth((pick + 1) * offset[len] - 1, len, k - already);
+		return kth((pick + 1) * (int) Math.pow(10,len - 1) - 1, len, k - already);
 	}
 
 	public static int len(int n) {
@@ -50,16 +48,16 @@ public class Problem_0440_KthSmallestInLexicographicalOrder {
 		// 有任何一步，中间位置没命中，左或者右命中了，那以后就都管不着了！
 		// 但是开始时，肯定是管的着的！
 		boolean closeToMax = true;
-		int ans = max / offset[len];
+		int ans = max / (int) Math.pow(10,len - 1);
 		while (--kth > 0) {
-			max %= offset[len--];
+			max %= (int) Math.pow(10, len-- - 1);
 			int pick = 0;
 			if (!closeToMax) {
 				pick = (kth - 1) / number[len];
 				ans = ans * 10 + pick;
 				kth -= pick * number[len];
 			} else {
-				int first = max / offset[len];
+				int first = max / (int) Math.pow(10,len - 1);
 				int left = first * number[len];
 				if (kth <= left) {
 					closeToMax = false;
@@ -69,7 +67,7 @@ public class Problem_0440_KthSmallestInLexicographicalOrder {
 					continue;
 				}
 				kth -= left;
-				int mid = number[len - 1] + (max % offset[len]) + 1;
+				int mid = number[len - 1] + (max % (int) Math.pow(10,len - 1)) + 1;
 				if (kth <= mid) {
 					ans = ans * 10 + first;
 					continue;
@@ -83,6 +81,10 @@ public class Problem_0440_KthSmallestInLexicographicalOrder {
 			}
 		}
 		return ans;
+	}
+
+	public static void main(String[] args) {
+		findKthNumber(65237, 55556);
 	}
 
 }

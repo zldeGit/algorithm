@@ -1,3 +1,10 @@
+import org.junit.jupiter.api.Test;
+
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.Selector;
+import java.nio.channels.ServerSocketChannel;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,15 +28,28 @@ public class HashMapMultiThread {
         }
     }
 
-    public static void main(String[] args) throws InterruptedException {
-        //开启两个线程
-        Thread t1 = new Thread(new AddThread(0));
-        Thread t2 = new Thread(new AddThread(1));
-        t1.start();
-        t2.start();
-        //主线程等待两个线程执行完
-        t1.join();
-        t2.join();
-        System.out.println(map.size());
-    }
+    public static void main(String[] args) throws InterruptedException, IOException {
+		ServerSocketChannel open = ServerSocketChannel.open();
+		open.configureBlocking(false);
+		open.socket().bind(new InetSocketAddress(8888));
+		Selector selector = Selector.open();
+		open.register(selector, SelectionKey.OP_ACCEPT);
+		while (true) {
+			selector.select();
+		}
+	}
+
+	static class Test1{
+		public int val;
+
+		public Test1(int val){
+			this.val=val;
+		}
+		@Override
+		public int hashCode() {
+			return 1 << 16;
+		}
+
+
+	}
 }

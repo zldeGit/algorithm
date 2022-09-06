@@ -44,4 +44,7 @@ public class _51_贪心_获取最大的钱数 {
 		}
 	}
 
+	public static void main(String[] args) {
+
+	}
 }

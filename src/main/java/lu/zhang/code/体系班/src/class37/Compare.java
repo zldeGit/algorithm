@@ -1,5 +1,7 @@
 package class37;
 
+import java.util.List;
+import java.util.Map;
 import java.util.TreeMap;
 
 import class35.Code01_AVLTreeMap.AVLTreeMap;
@@ -399,10 +401,9 @@ public class Compare {
 		System.out.println("性能测试结束");
 	}
 
-	public static void main(String[] args) {
+	public static void main(Map args) {
 		functionTest();
 		System.out.println("======");
 		performanceTest();
 	}
-
 }

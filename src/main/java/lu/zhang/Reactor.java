@@ -105,9 +105,6 @@ class Handler implements Runnable {
 				seletionKey.cancel();
 			}
 		}
-//虽然上面说到NIO一个线程就可以支持所有的IO处理。但是瓶颈也是显而易见的。我们看一个客户端的
-//情况，如果这个客户端多次进行请求，如果在Handler中的处理速度较慢，那么后续的客户端请求都会
-//被积压，导致响应变慢！所以引入了Reactor多线程模型。
 	}
 
 	private void write() {

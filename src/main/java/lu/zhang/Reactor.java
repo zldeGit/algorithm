@@ -9,6 +9,7 @@ import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.util.Set;
 
+//reactor
 public class Reactor implements Runnable {
 	final Selector selector;
 	final ServerSocketChannel serverSocketChannel;

@@ -1,4 +1,4 @@
-package lu.zhang.leetCode;
+package lu.zhang.entity;
 
 /**
  * @author 张璐

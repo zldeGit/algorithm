@@ -1,4 +1,4 @@
-package lu.zhang.queue;
+package lu.zhang.entity;
 
 import java.util.NoSuchElementException;
 import java.util.Stack;

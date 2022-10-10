@@ -1,6 +1,6 @@
 package lu.zhang.stack;
 
-import lu.zhang.leetCode.DoubleListNode;
+import lu.zhang.entity.DoubleListNode;
 
 import java.util.EmptyStackException;
 

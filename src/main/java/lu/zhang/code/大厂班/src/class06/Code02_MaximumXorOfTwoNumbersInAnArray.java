@@ -1,4 +1,4 @@
-package class06;
+package lu.zhang.code.体系班.src.class06;
 
 // 本题测试链接 : https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/
 public class Code02_MaximumXorOfTwoNumbersInAnArray {

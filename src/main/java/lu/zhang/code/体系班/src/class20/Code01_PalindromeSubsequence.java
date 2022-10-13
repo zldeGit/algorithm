@@ -1,4 +1,4 @@
-package class20;
+package lu.zhang.code.体系班.src.class20;
 
 // 测试链接：https://leetcode.com/problems/longest-palindromic-subsequence/
 public class Code01_PalindromeSubsequence {

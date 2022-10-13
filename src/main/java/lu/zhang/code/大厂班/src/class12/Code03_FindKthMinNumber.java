@@ -1,4 +1,4 @@
-package class12;
+package lu.zhang.code.体系班.src.class12;
 
 // 本题测试链接 : https://leetcode.com/problems/median-of-two-sorted-arrays/
 public class Code03_FindKthMinNumber {

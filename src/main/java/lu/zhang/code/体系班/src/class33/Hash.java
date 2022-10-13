@@ -1,4 +1,4 @@
-package class33;
+package lu.zhang.code.体系班.src.class33;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

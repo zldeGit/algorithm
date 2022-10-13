@@ -1,4 +1,4 @@
-package class18;
+package lu.zhang.code.体系班.src.class18;
 
 // 牛客的测试链接：
 // https://www.nowcoder.com/practice/7201cacf73e7495aa5f88b223bbbf6d1

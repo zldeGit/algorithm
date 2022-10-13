@@ -1,4 +1,4 @@
-package class45;
+package lu.zhang.code.体系班.src.class45;
 
 // 测试链接: https://leetcode.com/problems/create-maximum-number/
 public class Code02_CreateMaximumNumber {

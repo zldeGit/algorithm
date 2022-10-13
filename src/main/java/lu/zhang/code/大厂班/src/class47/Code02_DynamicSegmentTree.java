@@ -1,4 +1,4 @@
-package class47;
+package lu.zhang.code.体系班.src.class47;
 
 // 同时支持范围增加 + 范围修改 + 范围查询的动态开点线段树（累加和）
 // 真的用到！才去建立

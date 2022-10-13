@@ -1,4 +1,4 @@
-package class41;
+package lu.zhang.code.体系班.src.class41;
 
 public class Code01_BestSplitForAll {
 

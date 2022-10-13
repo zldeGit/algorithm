@@ -1,4 +1,4 @@
-package class36;
+package lu.zhang.code.体系班.src.class36;
 
 // 来自哈喽单车
 // 本题是leetcode原题 : https://leetcode.com/problems/stone-game-iv/

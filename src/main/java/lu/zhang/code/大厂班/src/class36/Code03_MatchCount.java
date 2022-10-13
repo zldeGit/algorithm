@@ -1,4 +1,4 @@
-package class36;
+package lu.zhang.code.体系班.src.class36;
 
 // 来自美团
 // 给定两个字符串s1和s2

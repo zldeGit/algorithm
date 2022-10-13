@@ -1,4 +1,4 @@
-package class26;
+package lu.zhang.code.体系班.src.class26;
 
 // 测试链接：https://leetcode.com/problems/sum-of-subarray-minimums/
 // subArrayMinSum1是暴力解

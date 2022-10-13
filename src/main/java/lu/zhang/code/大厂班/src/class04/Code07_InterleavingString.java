@@ -1,4 +1,4 @@
-package class04;
+package lu.zhang.code.体系班.src.class04;
 
 // 本题测试链接 : https://leetcode.com/problems/interleaving-string/
 public class Code07_InterleavingString {

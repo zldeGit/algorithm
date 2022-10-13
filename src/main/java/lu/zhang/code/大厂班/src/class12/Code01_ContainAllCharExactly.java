@@ -1,4 +1,4 @@
-package class12;
+package lu.zhang.code.体系班.src.class12;
 
 import java.util.Arrays;
 

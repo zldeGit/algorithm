@@ -1,4 +1,4 @@
-package class22;
+package lu.zhang.code.体系班.src.class22;
 
 // 本题测试链接 : https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/
 public class Code01_MaximumSumof3NonOverlappingSubarrays {

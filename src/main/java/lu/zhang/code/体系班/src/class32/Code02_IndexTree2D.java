@@ -1,4 +1,4 @@
-package class32;
+package lu.zhang.code.体系班.src.class32;
 
 // 测试链接：https://leetcode.com/problems/range-sum-query-2d-mutable
 // 但这个题是付费题目

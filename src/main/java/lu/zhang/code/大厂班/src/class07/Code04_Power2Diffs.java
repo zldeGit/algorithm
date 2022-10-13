@@ -1,4 +1,4 @@
-package class07;
+package lu.zhang.code.体系班.src.class07;
 
 import java.util.Arrays;
 import java.util.HashSet;

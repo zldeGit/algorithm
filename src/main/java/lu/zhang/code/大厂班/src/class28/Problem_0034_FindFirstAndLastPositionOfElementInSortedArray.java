@@ -1,4 +1,4 @@
-package class28;
+package lu.zhang.code.体系班.src.class28;
 
 public class Problem_0034_FindFirstAndLastPositionOfElementInSortedArray {
 

@@ -1,4 +1,4 @@
-package class26;
+package lu.zhang.code.体系班.src.class26;
 
 public class Code03_ZeroLeftOneStringNumber {
 

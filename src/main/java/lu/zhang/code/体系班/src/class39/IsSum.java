@@ -1,4 +1,4 @@
-package class39;
+package lu.zhang.code.体系班.src.class39;
 
 import java.util.HashMap;
 import java.util.HashSet;

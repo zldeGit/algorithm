@@ -1,4 +1,4 @@
-package class14;
+package lu.zhang.code.体系班.src.class14;
 
 import lu.zhang.prepare._50_贪心_金条分割的最小代价;
 

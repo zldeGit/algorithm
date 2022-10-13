@@ -1,4 +1,4 @@
-package class05;
+package lu.zhang.code.体系班.src.class05;
 
 import java.util.LinkedList;
 import java.util.Queue;

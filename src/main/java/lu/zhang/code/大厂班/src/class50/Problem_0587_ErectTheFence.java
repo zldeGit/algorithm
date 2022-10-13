@@ -1,4 +1,4 @@
-package class50;
+package lu.zhang.code.体系班.src.class50;
 
 import java.util.Arrays;
 

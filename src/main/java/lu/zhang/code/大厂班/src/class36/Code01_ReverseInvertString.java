@@ -1,4 +1,4 @@
-package class36;
+package lu.zhang.code.体系班.src.class36;
 
 // 来自网易
 // 规定：L[1]对应a，L[2]对应b，L[3]对应c，...，L[25]对应y

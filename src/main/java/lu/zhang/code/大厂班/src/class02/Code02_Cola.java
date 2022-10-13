@@ -1,4 +1,4 @@
-package class02;
+package lu.zhang.code.体系班.src.class02;
 
 public class Code02_Cola {
 	/*

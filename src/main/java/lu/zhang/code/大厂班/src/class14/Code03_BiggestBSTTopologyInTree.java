@@ -1,4 +1,4 @@
-package class14;
+package lu.zhang.code.体系班.src.class14;
 
 // 本题测试链接 : https://www.nowcoder.com/practice/e13bceaca5b14860b83cbcc4912c5d4a
 // 提交以下的代码，并把主类名改成Main

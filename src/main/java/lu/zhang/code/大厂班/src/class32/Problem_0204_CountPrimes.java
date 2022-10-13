@@ -1,4 +1,4 @@
-package class32;
+package lu.zhang.code.体系班.src.class32;
 
 public class Problem_0204_CountPrimes {
 

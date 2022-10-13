@@ -1,4 +1,4 @@
-package class04;
+package lu.zhang.code.体系班.src.class04;
 
 // 测试链接 : https://leetcode.com/problems/candy/
 public class Code05_CandyProblem {

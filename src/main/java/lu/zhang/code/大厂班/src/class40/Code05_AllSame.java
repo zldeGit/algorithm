@@ -1,4 +1,4 @@
-package class40;
+package lu.zhang.code.体系班.src.class40;
 
 // 来自腾讯
 // 比如arr = {3,1,2,4}

@@ -1,4 +1,4 @@
-package class44;
+package lu.zhang.code.体系班.src.class44;
 
 // 测试链接: https://leetcode.com/problems/last-substring-in-lexicographical-order/
 public class Code01_LastSubstringInLexicographicalOrder {

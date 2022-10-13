@@ -1,4 +1,4 @@
-package class43;
+package lu.zhang.code.体系班.src.class43;
 
 public class Code03_PavingTile {
 

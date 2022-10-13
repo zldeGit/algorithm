@@ -1,4 +1,4 @@
-package class22;
+package lu.zhang.code.体系班.src.class22;
 
 import java.util.HashMap;
 

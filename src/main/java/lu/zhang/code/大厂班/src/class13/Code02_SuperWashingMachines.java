@@ -1,4 +1,4 @@
-package class13;
+package lu.zhang.code.体系班.src.class13;
 
 // 本题测试链接 : https://leetcode.com/problems/super-washing-machines/
 public class Code02_SuperWashingMachines {

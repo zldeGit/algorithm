@@ -1,4 +1,4 @@
-package class31;
+package lu.zhang.code.体系班.src.class31;
 
 import java.util.ArrayList;
 import java.util.List;

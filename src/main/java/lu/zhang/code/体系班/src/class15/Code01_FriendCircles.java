@@ -1,4 +1,4 @@
-package class15;
+package lu.zhang.code.体系班.src.class15;
 
 // 本题为leetcode原题
 // 测试链接：https://leetcode.com/problems/friend-circles/

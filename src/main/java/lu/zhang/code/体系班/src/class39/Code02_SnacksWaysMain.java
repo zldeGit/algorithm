@@ -1,5 +1,5 @@
 //不要拷贝包信息的内容
-package class39;
+package lu.zhang.code.体系班.src.class39;
 
 //本文件是Code02_SnacksWays问题的牛客题目解答
 //但是用的分治的方法

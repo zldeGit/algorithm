@@ -1,4 +1,4 @@
-package class46;
+package lu.zhang.code.体系班.src.class46;
 
 public class Problem_0411_MinimumUniqueWordAbbreviation {
 

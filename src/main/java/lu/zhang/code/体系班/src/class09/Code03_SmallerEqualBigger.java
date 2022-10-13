@@ -1,4 +1,4 @@
-package class09;
+package lu.zhang.code.体系班.src.class09;
 
 public class Code03_SmallerEqualBigger {
 

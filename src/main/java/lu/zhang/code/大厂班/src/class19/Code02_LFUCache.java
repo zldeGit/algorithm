@@ -1,4 +1,4 @@
-package class19;
+package lu.zhang.code.体系班.src.class19;
 
 import java.util.HashMap;
 

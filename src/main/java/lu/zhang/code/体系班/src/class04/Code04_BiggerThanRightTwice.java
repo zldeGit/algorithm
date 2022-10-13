@@ -1,4 +1,4 @@
-package class04;
+package lu.zhang.code.体系班.src.class04;
 
 //  本题测试链接 : https://leetcode.com/problems/reverse-pairs/
 public class Code04_BiggerThanRightTwice {

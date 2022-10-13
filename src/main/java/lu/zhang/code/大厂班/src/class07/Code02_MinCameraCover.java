@@ -1,4 +1,4 @@
-package class07;
+package lu.zhang.code.体系班.src.class07;
 
 // 本题测试链接 : https://leetcode.com/problems/binary-tree-cameras/
 public class Code02_MinCameraCover {

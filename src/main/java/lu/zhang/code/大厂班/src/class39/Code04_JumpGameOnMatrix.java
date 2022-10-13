@@ -1,4 +1,4 @@
-package class39;
+package lu.zhang.code.体系班.src.class39;
 
 // 来自京东
 // 给定一个二维数组matrix，matrix[i][j] = k代表:

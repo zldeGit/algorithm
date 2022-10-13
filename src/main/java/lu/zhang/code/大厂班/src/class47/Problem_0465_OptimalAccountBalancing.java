@@ -1,4 +1,4 @@
-package class47;
+package lu.zhang.code.体系班.src.class47;
 
 import java.util.Arrays;
 import java.util.HashMap;

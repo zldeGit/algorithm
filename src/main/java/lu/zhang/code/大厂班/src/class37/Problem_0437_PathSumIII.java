@@ -1,4 +1,4 @@
-package class37;
+package lu.zhang.code.体系班.src.class37;
 
 import java.util.HashMap;
 

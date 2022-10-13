@@ -1,4 +1,4 @@
-package class06;
+package lu.zhang.code.体系班.src.class06;
 
 public class Code01_MaxXOR {
 

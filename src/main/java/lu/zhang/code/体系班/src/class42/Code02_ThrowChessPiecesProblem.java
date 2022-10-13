@@ -1,4 +1,4 @@
-package class42;
+package lu.zhang.code.体系班.src.class42;
 
 // leetcode测试链接：https://leetcode.com/problems/super-egg-drop
 // 方法1和方法2会超时

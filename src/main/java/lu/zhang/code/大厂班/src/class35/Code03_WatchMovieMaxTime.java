@@ -1,4 +1,4 @@
-package class35;
+package lu.zhang.code.体系班.src.class35;
 
 import java.util.Arrays;
 

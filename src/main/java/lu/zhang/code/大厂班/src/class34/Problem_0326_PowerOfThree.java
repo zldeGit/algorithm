@@ -1,4 +1,4 @@
-package class34;
+package lu.zhang.code.体系班.src.class34;
 
 public class Problem_0326_PowerOfThree {
 

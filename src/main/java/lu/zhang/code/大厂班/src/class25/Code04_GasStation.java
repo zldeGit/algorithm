@@ -1,4 +1,4 @@
-package class25;
+package lu.zhang.code.体系班.src.class25;
 
 // 本题测试链接 : https://leetcode.com/problems/gas-station/
 // 注意本题的实现比leetcode上的问法更加通用

@@ -1,4 +1,4 @@
-package class49;
+package lu.zhang.code.体系班.src.class49;
 
 // 这道题在leetcode上，所有题解都只能做到O( (logN) 平方)的解
 // 我们课上讲的是O(logN)的解

@@ -1,4 +1,4 @@
-package class31;
+package lu.zhang.code.体系班.src.class31;
 
 public class Problem_0125_ValidPalindrome {
 

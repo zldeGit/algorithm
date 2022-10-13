@@ -1,4 +1,4 @@
-package class24;
+package lu.zhang.code.体系班.src.class24;
 
 public class Code05_MinWindowLength {
 

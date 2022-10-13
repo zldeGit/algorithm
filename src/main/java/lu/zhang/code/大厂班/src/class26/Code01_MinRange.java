@@ -1,4 +1,4 @@
-package class26;
+package lu.zhang.code.体系班.src.class26;
 
 import java.util.Arrays;
 import java.util.Comparator;

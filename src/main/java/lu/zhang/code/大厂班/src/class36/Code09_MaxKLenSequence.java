@@ -1,4 +1,4 @@
-package class36;
+package lu.zhang.code.体系班.src.class36;
 
 import java.util.TreeSet;
 

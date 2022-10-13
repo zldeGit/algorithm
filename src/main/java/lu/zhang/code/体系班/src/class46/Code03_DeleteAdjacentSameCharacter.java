@@ -1,4 +1,4 @@
-package class46;
+package lu.zhang.code.体系班.src.class46;
 
 // 如果一个字符相邻的位置没有相同字符，那么这个位置的字符出现不能被消掉
 // 比如:"ab"，其中a和b都不能被消掉

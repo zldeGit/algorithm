@@ -1,4 +1,4 @@
-package class46;
+package lu.zhang.code.体系班.src.class46;
 
 // 本题测试链接 : https://leetcode.com/problems/burst-balloons/
 public class Code01_BurstBalloons {

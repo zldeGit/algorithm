@@ -1,4 +1,4 @@
-package class47;
+package lu.zhang.code.体系班.src.class47;
 
 // 本题测试链接 : https://leetcode.com/problems/strange-printer/
 public class Code01_StrangePrinter {

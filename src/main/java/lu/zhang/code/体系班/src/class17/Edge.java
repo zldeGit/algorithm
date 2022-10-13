@@ -1,4 +1,4 @@
-package class17;
+package lu.zhang.code.体系班.src.class17;
 
 public class Edge {
 	public int weight;

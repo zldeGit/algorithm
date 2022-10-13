@@ -1,4 +1,4 @@
-package class14;
+package lu.zhang.code.体系班.src.class14;
 
 import lu.zhang.prepare._48_贪心_最大会议宣讲次数;
 

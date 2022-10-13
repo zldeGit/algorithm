@@ -1,4 +1,4 @@
-package class19;
+package lu.zhang.code.体系班.src.class19;
 
 // 这个问题leetcode上可以直接测
 // 链接：https://leetcode.com/problems/longest-common-subsequence/

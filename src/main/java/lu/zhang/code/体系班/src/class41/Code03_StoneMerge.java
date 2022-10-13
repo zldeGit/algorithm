@@ -1,4 +1,4 @@
-package class41;
+package lu.zhang.code.体系班.src.class41;
 
 // 四边形不等式：合并石子问题
 public class Code03_StoneMerge {

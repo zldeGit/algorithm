@@ -1,4 +1,4 @@
-package class18;
+package lu.zhang.code.体系班.src.class18;
 
 public class Code02_CardsInLine {
 

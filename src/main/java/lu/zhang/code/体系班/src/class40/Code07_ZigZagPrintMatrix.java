@@ -1,4 +1,4 @@
-package class40;
+package lu.zhang.code.体系班.src.class40;
 
 public class Code07_ZigZagPrintMatrix {
 

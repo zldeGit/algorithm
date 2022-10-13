@@ -1,4 +1,4 @@
-package class16;
+package lu.zhang.code.体系班.src.class16;
 
 // 本题测试链接 : https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/
 public class Code05_JosephusProblem {

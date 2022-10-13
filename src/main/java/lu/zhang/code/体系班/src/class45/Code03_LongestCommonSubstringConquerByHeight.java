@@ -1,4 +1,4 @@
-package class45;
+package lu.zhang.code.体系班.src.class45;
 
 // 最长公共子串问题是面试常见题目之一
 // 假设str1长度N，str2长度M

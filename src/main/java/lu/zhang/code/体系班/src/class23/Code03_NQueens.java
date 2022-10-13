@@ -1,4 +1,4 @@
-package class23;
+package lu.zhang.code.体系班.src.class23;
 
 public class Code03_NQueens {
 

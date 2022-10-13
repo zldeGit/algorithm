@@ -1,4 +1,4 @@
-package class20;
+package lu.zhang.code.体系班.src.class20;
 
 public class Code02_HorseJump {
 

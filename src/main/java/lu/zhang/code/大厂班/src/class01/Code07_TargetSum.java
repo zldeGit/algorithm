@@ -1,4 +1,4 @@
-package class01;
+package lu.zhang.code.体系班.src.class01;
 
 import java.util.HashMap;
 

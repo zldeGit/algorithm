@@ -1,4 +1,4 @@
-package class09;
+package lu.zhang.code.体系班.src.class09;
 
 // 本题测试链接 : https://leetcode.com/problems/longest-increasing-subsequence
 public class Code03_LIS {

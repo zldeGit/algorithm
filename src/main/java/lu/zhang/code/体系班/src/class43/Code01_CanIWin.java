@@ -1,4 +1,4 @@
-package class43;
+package lu.zhang.code.体系班.src.class43;
 
 // leetcode 464题
 public class Code01_CanIWin {

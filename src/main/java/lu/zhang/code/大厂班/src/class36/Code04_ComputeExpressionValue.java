@@ -1,4 +1,4 @@
-package class36;
+package lu.zhang.code.体系班.src.class36;
 
 // 来自美团
 // () 分值为2

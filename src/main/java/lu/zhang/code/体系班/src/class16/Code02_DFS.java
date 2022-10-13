@@ -1,4 +1,4 @@
-package class16;
+package lu.zhang.code.体系班.src.class16;
 
 import java.util.HashSet;
 import java.util.Stack;
@@ -27,8 +27,4 @@ public class Code02_DFS {
 			}
 		}
 	}
-	
-	
-	
-
 }

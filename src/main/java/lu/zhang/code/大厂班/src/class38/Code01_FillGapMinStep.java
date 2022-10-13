@@ -1,4 +1,4 @@
-package class38;
+package lu.zhang.code.体系班.src.class38;
 
 // 来自字节
 // 给定两个数a和b

@@ -1,4 +1,4 @@
-package class30;
+package lu.zhang.code.体系班.src.class30;
 
 public class Problem_0108_ConvertSortedArrayToBinarySearchTree {
 

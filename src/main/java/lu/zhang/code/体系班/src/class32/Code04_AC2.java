@@ -1,4 +1,4 @@
-package class32;
+package lu.zhang.code.体系班.src.class32;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

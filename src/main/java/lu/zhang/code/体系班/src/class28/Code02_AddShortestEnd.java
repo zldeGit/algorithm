@@ -1,4 +1,4 @@
-package class28;
+package lu.zhang.code.体系班.src.class28;
 
 public class Code02_AddShortestEnd {
 

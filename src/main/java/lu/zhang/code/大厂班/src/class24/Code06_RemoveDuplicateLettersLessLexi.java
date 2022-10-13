@@ -1,4 +1,4 @@
-package class24;
+package lu.zhang.code.体系班.src.class24;
 
 // 本题测试链接 : https://leetcode.com/problems/remove-duplicate-letters/
 public class Code06_RemoveDuplicateLettersLessLexi {

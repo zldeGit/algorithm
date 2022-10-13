@@ -1,4 +1,4 @@
-package class28;
+package lu.zhang.code.体系班.src.class28;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package class05;
+package lu.zhang.code.体系班.src.class05;
 
 // 这道题直接在leetcode测评：
 // https://leetcode.com/problems/count-of-range-sum/

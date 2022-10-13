@@ -1,4 +1,4 @@
-package class39;
+package lu.zhang.code.体系班.src.class39;
 
 // 真实笔试，忘了哪个公司，但是绝对大厂
 // 一个子序列的消除规则如下:

@@ -1,4 +1,4 @@
-package class18;
+package lu.zhang.code.体系班.src.class18;
 
 // 本题测试链接 : https://leetcode.com/problems/shortest-bridge/
 public class Code02_ShortestBridge {

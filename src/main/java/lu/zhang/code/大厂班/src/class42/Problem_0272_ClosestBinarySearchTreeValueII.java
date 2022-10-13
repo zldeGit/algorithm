@@ -1,4 +1,4 @@
-package class42;
+package lu.zhang.code.体系班.src.class42;
 
 import java.util.LinkedList;
 import java.util.List;

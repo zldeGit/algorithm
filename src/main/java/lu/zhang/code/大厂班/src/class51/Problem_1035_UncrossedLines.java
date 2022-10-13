@@ -1,4 +1,4 @@
-package class51;
+package lu.zhang.code.体系班.src.class51;
 
 import java.util.HashMap;
 

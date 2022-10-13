@@ -1,4 +1,4 @@
-package class39;
+package lu.zhang.code.体系班.src.class39;
 
 public class Code02_SnacksWays {
 

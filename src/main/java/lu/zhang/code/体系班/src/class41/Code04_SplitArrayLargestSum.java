@@ -1,4 +1,4 @@
-package class41;
+package lu.zhang.code.体系班.src.class41;
 
 // leetcode原题
 // 测试链接：https://leetcode.com/problems/split-array-largest-sum/

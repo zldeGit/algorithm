@@ -1,4 +1,4 @@
-package class10;
+package lu.zhang.code.体系班.src.class10;
 
 public class Code01_FindFirstIntersectNode {
 

@@ -1,5 +1,7 @@
 package lu.zhang.leetCode;
 
+import lu.zhang.entity.ListNode;
+
 import java.util.HashSet;
 
 /**

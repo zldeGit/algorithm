@@ -1,6 +1,6 @@
 package lu.zhang.prepare;
 
-import lu.zhang.leetCode.TreeNode;
+import lu.zhang.entity.TreeNode;
 
 /**
  * @author 张璐

@@ -1,126 +1,84 @@
-//给你一个大小为 m x n 的二进制网格 grid 。网格表示一个地图，其中，0 表示水，1 表示陆地。最初，grid 中的所有单元格都是水单元格（即，所有
-//单元格都是 0）。 
+//编写一个程序，通过填充空格来解决数独问题。 
 //
-// 可以通过执行 addLand 操作，将某个位置的水转换成陆地。给你一个数组 positions ，其中 positions[i] = [ri, ci] 是
-//要执行第 i 次操作的位置 (ri, ci) 。 
+// 数独的解法需 遵循如下规则： 
 //
-// 返回一个整数数组 answer ，其中 answer[i] 是将单元格 (ri, ci) 转换为陆地后，地图中岛屿的数量。 
+// 
+// 数字 1-9 在每一行只能出现一次。 
+// 数字 1-9 在每一列只能出现一次。 
+// 数字 1-9 在每一个以粗实线分隔的 3x3 宫内只能出现一次。（请参考示例图） 
+// 
 //
-// 岛屿 的定义是被「水」包围的「陆地」，通过水平方向或者垂直方向上相邻的陆地连接而成。你可以假设地图网格的四边均被无边无际的「水」所包围。 
+// 数独部分空格内已填入了数字，空白格用 '.' 表示。 
 //
+// 
+//
+// 
+// 
+// 
 // 示例 1： 
 // 
 // 
-//输入：m = 3, n = 3, positions = [[0,0],[0,1],[1,2],[2,1]]
-//输出：[1,1,2,3]
-//解释：
-//起初，二维网格 grid 被全部注入「水」。（0 代表「水」，1 代表「陆地」）
-//- 操作 #1：addLand(0, 0) 将 grid[0][0] 的水变为陆地。此时存在 1 个岛屿。
-//- 操作 #2：addLand(0, 1) 将 grid[0][1] 的水变为陆地。此时存在 1 个岛屿。
-//- 操作 #3：addLand(1, 2) 将 grid[1][2] 的水变为陆地。此时存在 2 个岛屿。
-//- 操作 #4：addLand(2, 1) 将 grid[2][1] 的水变为陆地。此时存在 3 个岛屿。
+//输入：board = [["5","3",".",".","7",".",".",".","."],["6",".",".","1","9","5",".
+//",".","."],[".","9","8",".",".",".",".","6","."],["8",".",".",".","6",".",".",".
+//","3"],["4",".",".","8",".","3",".",".","1"],["7",".",".",".","2",".",".",".","6
+//"],[".","6",".",".",".",".","2","8","."],[".",".",".","4","1","9",".",".","5"],[
+//".",".",".",".","8",".",".","7","9"]]
+//输出：[["5","3","4","6","7","8","9","1","2"],["6","7","2","1","9","5","3","4","8
+//"],["1","9","8","3","4","2","5","6","7"],["8","5","9","7","6","1","4","2","3"],[
+//"4","2","6","8","5","3","7","9","1"],["7","1","3","9","2","4","8","5","6"],["9",
+//"6","1","5","3","7","2","8","4"],["2","8","7","4","1","9","6","3","5"],["3","4",
+//"5","2","8","6","1","7","9"]]
+//解释：输入的数独如上图所示，唯一有效的解决方案如下所示：
+// 
+// 
+// 
 // 
 //
-// 示例 2： 
 //
-// 
-//输入：m = 1, n = 1, positions = [[0,0]]
-//输出：[1]
-// 
 //
 // 
 //
 // 提示： 
 //
 // 
-// 1 <= m, n, positions.length <= 10⁴ 
-// 1 <= m * n <= 10⁴ 
-// positions[i].length == 2 
-// 0 <= ri < m 
-// 0 <= ci < n 
+// board.length == 9 
+// board[i].length == 9 
+// board[i][j] 是一位数字或者 '.' 
+// 题目数据 保证 输入数独仅有一个解 
 // 
 //
-// 
-//
-// 进阶：你可以设计一个时间复杂度 O(k log(mn)) 的算法解决此问题吗？（其中 k == positions.length） 
-//
-// Related Topics 并查集 数组 👍 144 👎 0
+// Related Topics 数组 回溯 矩阵 👍 1439 👎 0
 
 
-import java.util.LinkedList;
-import java.util.List;
+import com.sun.org.apache.xpath.internal.operations.Or;
+
+import java.awt.image.Kernel;
+import java.util.Arrays;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
-    public List<Integer> numIslands2(int m, int n, int[][] positions) {
-		int[][] arr = new int[m][n];
-		Unio unio = new Unio(m, n);
-		List<Integer> ans = new LinkedList<>();
-		for (int[] p : positions) {
-			int i = p[0];
-			int j = p[1];
-			arr[i][j]=1;
-			unio.count+=1;
-			if (i-1>-1&&arr[i-1][j]==1) {
-				unio.unio(i * n + j, (i - 1) * n + j);
+	public void rotate(int[][] matrix) {
+		int length= matrix.length;
+		int k = length >> 1;
+		int n = length - 1;
+		for (int i = 0; i < k; i++) {
+			for (int j = i; j < n-i; j++) {
+				int temp = matrix[i][j];
+				matrix[i][j] = matrix[n-j][i];
+				matrix[n - j][i] = matrix[n - i][n - j];
+				matrix[n - i][n - j] = matrix[j][n - i];
+				matrix[j][n - i] = temp;
 			}
-			if(i+1<m&&arr[i+1][j]==1){
-				unio.unio(i * n + j, (i + 1) * n + j);
-			}
-			if(j-1>-1&&arr[i][j-1]==1){
-				unio.unio(i * n + j, i * n + j-1);
-			}
-			if(j+1<n&&arr[i][j+1]==1){
-				unio.unio(i * n + j, i * n + j + 1);
-			}
-			ans.add(unio.count);
-		}
-		return ans;
-	}
-	
-	public class Unio{
-		public int count;
-		public int[] parent;
-		public int[] rank;
-
-		public Unio(int m, int n) {
-			parent = new int[m * n];
-			rank = new int[m * n];
-			for(int i = 0; i < m; i++){
-				for(int j=0; j< n; j++){
-					int temp = n * i + j;
-					parent[temp] = temp;
-				}
-			}
-		}
-		public void unio(int x,int y) {
-			int px=findParent(x);
-			int py=findParent(y);
-			if (px != py) {
-				int rankx=rank[px];
-				int ranky=rank[py];
-				if(rankx>ranky){
-					parent[py]=px;
-				}else if( rankx<ranky){
-					parent[px]=py;
-				}else {
-					parent[py]=px;
-					rank[px]+=1;
-				}
-				count--;
-			}
-		}
-		public int findParent(int x) {
-			if (parent[x]!=x) {
-				parent[x]=findParent(parent[x]);
-			}
-			return parent[x];
 		}
 	}
 
 	public static void main(String[] args) {
-		Solution s = new Solution();
-		s.numIslands2(8, 2, new int[][]{new int[]{7, 0}});
+		Solution solution = new Solution();
+		solution.rotate(new int[][]{
+				{1, 2, 3},
+				{4, 5, 6},
+				{7, 8, 9}
+		});
 	}
 }
 //leetcode submit region end(Prohibit modification and deletion)

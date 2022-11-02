@@ -4,6 +4,8 @@ import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.nio.ByteBuffer;
+import java.nio.channels.SocketChannel;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -13,42 +15,15 @@ import java.util.concurrent.Executors;
  */
 public class Test {
 	public static void main(String[] args) throws IOException {
-		ExecutorService executor = Executors.newFixedThreadPool(128);
-		ServerSocket serverSocket = new ServerSocket();
-		serverSocket.bind(new InetSocketAddress(1234));
-// 循环等待新连接
-		while (true) {
-			Socket socket = serverSocket.accept();
-// 为新的连接创建线程执行任务
-			executor.submit(new ConnectionTask(socket));
+		SocketChannel socketChannel = SocketChannel.open();
+		socketChannel.connect(new InetSocketAddress( "192.168.18.20",10016));
+		ByteBuffer buf = ByteBuffer.allocate(1024);
+
+		int bytesRead = socketChannel.read(buf);
+		while (bytesRead != -1) {
+			socketChannel.read(buf);
+			System.out.println(buf);
 		}
 	}
 
-	public static class ConnectionTask extends Thread {
-		private Socket socket;
-
-		public ConnectionTask(Socket socket) {
-			this.socket = socket;
-		}
-
-		public void run() {
-				InputStream inputStream = null;
-				OutputStream outputStream = null;
-				try {
-					inputStream = socket.getInputStream();
-// read from socket...
-					byte[] bytes = new byte[1024];
-					int read = inputStream.read(bytes);
-					System.out.println(bytes);
-					outputStream = socket.getOutputStream();
-// write to socket...
-					outputStream.write("aaaa".getBytes());
-					outputStream.close();
-					inputStream.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				} finally {
-				}
-		}
-	}
 }

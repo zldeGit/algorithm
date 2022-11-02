@@ -9,6 +9,8 @@ import java.util.*;
  * 给定数组ability，长度都为M，ability[j]表示j号人的能力，每一号工作，都可以提供无数的岗位，难度和收入都一样
  * 但是人的能力必须&gt;=这份工作的难度，才能上班。返回一个长度为M的数组ans，ans[j]表示j号人能获得的最好收入
  * [68,35,52,47,86] [67,17,1,81,3] [92,10,85,84,82] 测试结果:204 期望结果:324
+ *
+ *
  */
 public class _2_最好的收入 {
 	public static int[] bestEarning(int[] hard, int[] money, int[] ability) {

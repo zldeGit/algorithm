@@ -1,7 +1,14 @@
+package lu.zhang.leetCode;
+
 import java.util.LinkedList;
 import java.util.List;
 
-class Solution {
+/**
+ * @author 张璐
+ * @date 2022/11/3
+ */
+//https://leetcode.cn/problems/number-of-islands-ii/description/
+public class LeetCode305 {
 	public List<Integer> numIslands2(int m, int n, int[][] positions) {
 		UnioFind find = new UnioFind(m, n);
 		List<Integer> ans = new LinkedList<>();
@@ -31,13 +38,13 @@ class Solution {
 			parent[x * island[x].length + y] = x * island[x].length + y;
 			island[x][y] = 1;
 			count++;
-			if (x - 1 > 0 && island[x - 1][y] == 1) {
+			if (x  > 0 && island[x - 1][y] == 1) {
 				union(x - 1, y, x, y);
 			}
 			if (x + 1 < island.length && island[x + 1][y] == 1) {
 				union(x + 1, y, x, y);
 			}
-			if (y - 1 > 0 && island[x][y - 1] == 1) {
+			if (y  > 0 && island[x][y - 1] == 1) {
 				union(x, y - 1, x, y);
 			}
 			if (y + 1 < island[x].length && island[x][y + 1] == 1) {
@@ -69,18 +76,5 @@ class Solution {
 			parent[index] = findParent(parent[index]);
 			return parent[index];
 		}
-	}
-
-	public static void main(String[] args) {
-		Solution solution = new Solution();
-		int[][] arr = new int[7][2];
-		arr[0] = new int[]{0, 1};
-		arr[1] = new int[]{1, 2};
-		arr[2] = new int[]{2, 1};
-		arr[3] = new int[]{1, 0};
-		arr[4] = new int[]{0, 2};
-		arr[5] = new int[]{0, 0};
-		arr[6] = new int[]{1, 1};
-		solution.numIslands2(3, 3, arr);
 	}
 }

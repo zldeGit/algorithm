@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class18;
+package lu.zhang.code.大厂班.src.class18;
 
 // 牛客的测试链接：
 // https://www.nowcoder.com/questionTerminal/8ecfe02124674e908b2aae65aad4efdf

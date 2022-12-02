@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class30;
+package lu.zhang.code.大厂班.src.class30;
 
 public class Problem_0639_DecodeWaysII {
 

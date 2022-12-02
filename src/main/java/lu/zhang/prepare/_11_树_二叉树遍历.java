@@ -17,13 +17,14 @@ public class _11_树_二叉树遍历 {
 		while (!stack.isEmpty()) {
 			TreeNode treeNode = stack.pollLast();
 			if (treeNode != null) {
-				System.out.print(treeNode.val +" -> ");
+				System.out.print(treeNode.val + " -> ");
 				stack.offer(treeNode.right);
 				stack.offer(treeNode.left);
 			}
 		}
 		System.out.println();
 	}
+
 	//中序
 	public static void LDR(TreeNode node) {
 		LinkedList<TreeNode> stack = new LinkedList<TreeNode>();
@@ -33,7 +34,7 @@ public class _11_树_二叉树遍历 {
 				node = node.left;
 			}
 			node = stack.pop();
-			System.out.print(node.val+" -> ");
+			System.out.print(node.val + " -> ");
 			node = node.right;
 		}
 		System.out.println();
@@ -56,7 +57,7 @@ public class _11_树_二叉树遍历 {
 		while (!printStack.isEmpty()) {
 			TreeNode printNode = printStack.pollLast();
 			if (printNode != null) {
-				System.out.print(printNode.val +" -> ");
+				System.out.print(printNode.val + " -> ");
 			}
 		}
 		System.out.println();
@@ -70,7 +71,7 @@ public class _11_树_二叉树遍历 {
 		queue.offer(node);
 		while (!queue.isEmpty()) {
 			TreeNode poll = queue.poll();
-			System.out.print(poll.val+ " -> ");
+			System.out.print(poll.val + " -> ");
 			if (poll.left != null) {
 				queue.offer(poll.left);
 			}
@@ -82,13 +83,13 @@ public class _11_树_二叉树遍历 {
 
 	}
 
-//	    1
+	//	    1
 //	   / \
 //	  2   3
 //	 / \ / \
 //	4  5 6  7
 	public static void main(String[] args) {
-		Integer[] integers = {1, 2, 3,4,5 , 6, 7};
+		Integer[] integers = {1, 2, 3, 4, 5, 6, 7, null, 8, 9};
 		TreeNode treeNode = Utils.createTreeNode(integers);
 		DLR(treeNode);
 		LDR(treeNode);

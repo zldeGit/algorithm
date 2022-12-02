@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class39;
+package lu.zhang.code.大厂班.src.class39;
 
 // 来自腾讯
 // 给定一个只由0和1组成的字符串S，假设下标从1开始，规定i位置的字符价值V[i]计算方式如下 : 

@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class17;
+package lu.zhang.code.大厂班.src.class17;
 
 // 测试链接 : https://leetcode-cn.com/problems/21dk04/
 public class Code04_DistinctSubseq {

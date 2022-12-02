@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class01;
+package lu.zhang.code.大厂班.src.class01;
 
 public class Code04_MinSwapStep {
 

@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class13;
+package lu.zhang.code.大厂班.src.class13;
 
 // 本题测试链接 : https://leetcode.com/problems/scramble-string/
 public class Code03_ScrambleString {

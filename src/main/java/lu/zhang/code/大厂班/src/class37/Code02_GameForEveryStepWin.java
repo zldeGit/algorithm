@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class37;
+package lu.zhang.code.大厂班.src.class37;
 
 // 来自字节
 // 扑克牌中的红桃J和梅花Q找不到了，为了利用剩下的牌做游戏，小明设计了新的游戏规则

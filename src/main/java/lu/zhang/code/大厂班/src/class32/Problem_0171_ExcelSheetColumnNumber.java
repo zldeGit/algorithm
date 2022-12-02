@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class32;
+package lu.zhang.code.大厂班.src.class32;
 
 public class Problem_0171_ExcelSheetColumnNumber {
 

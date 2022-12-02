@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class05;
+package lu.zhang.code.大厂班.src.class05;
 
 // 如果一个节点X，它左树结构和右树结构完全一样，那么我们说以X为头的子树是相等子树
 // 给定一棵二叉树的头节点head，返回head整棵树上有多少棵相等子树

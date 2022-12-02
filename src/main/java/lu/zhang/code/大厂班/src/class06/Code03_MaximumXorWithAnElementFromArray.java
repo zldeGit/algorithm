@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class06;
+package lu.zhang.code.大厂班.src.class06;
 
 // 测试链接 : https://leetcode.com/problems/maximum-xor-with-an-element-from-array/
 public class Code03_MaximumXorWithAnElementFromArray {

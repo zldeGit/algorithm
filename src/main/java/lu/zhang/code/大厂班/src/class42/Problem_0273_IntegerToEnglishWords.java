@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class42;
+package lu.zhang.code.大厂班.src.class42;
 
 public class Problem_0273_IntegerToEnglishWords {
 

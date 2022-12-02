@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class30;
+package lu.zhang.code.大厂班.src.class30;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

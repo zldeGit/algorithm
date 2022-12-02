@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class07;
+package lu.zhang.code.大厂班.src.class07;
 
 // 测试链接 : https://leetcode.com/problems/maximum-gap/
 public class Code03_MaxGap {

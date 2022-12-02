@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class17;
+package lu.zhang.code.大厂班.src.class17;
 
 public class Code01_FindNumInSortedMatrix {
 

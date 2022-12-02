@@ -1,8 +1,8 @@
-package lu.zhang.code.体系班.src.class01;
+package lu.zhang.code.大厂班.src.class01;
 
 import java.util.Arrays;
 
-public class Code01_CordCoverMaxPoint {
+public class 	Code01_CordCoverMaxPoint {
 
 	public static int maxPoint1(int[] arr, int L) {
 		int res = 1;

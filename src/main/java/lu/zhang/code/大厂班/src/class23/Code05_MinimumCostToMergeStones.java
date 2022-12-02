@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class23;
+package lu.zhang.code.大厂班.src.class23;
 
 // 本题测试链接 : https://leetcode.com/problems/minimum-cost-to-merge-stones/
 public class Code05_MinimumCostToMergeStones {

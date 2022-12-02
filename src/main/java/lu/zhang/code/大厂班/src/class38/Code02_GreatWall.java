@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class38;
+package lu.zhang.code.大厂班.src.class38;
 
 // 360笔试题
 // 长城守卫军

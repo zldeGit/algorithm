@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class36;
+package lu.zhang.code.大厂班.src.class36;
 
 // 来自美团
 // 给定一个数组arr，长度为N，做出一个结构，可以高效的做如下的查询

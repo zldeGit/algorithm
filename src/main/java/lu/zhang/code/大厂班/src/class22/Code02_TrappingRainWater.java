@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class22;
+package lu.zhang.code.大厂班.src.class22;
 
 // 本题测试链接 : https://leetcode.com/problems/trapping-rain-water/
 public class Code02_TrappingRainWater {

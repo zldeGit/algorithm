@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class10;
+package lu.zhang.code.大厂班.src.class10;
 
 // 测试链接 : https://leetcode.com/problems/k-inverse-pairs-array/
 public class Code03_KInversePairs {

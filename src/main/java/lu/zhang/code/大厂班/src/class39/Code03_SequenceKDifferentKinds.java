@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class39;
+package lu.zhang.code.大厂班.src.class39;
 
 // 来自百度
 // 给定一个字符串str，和一个正数k

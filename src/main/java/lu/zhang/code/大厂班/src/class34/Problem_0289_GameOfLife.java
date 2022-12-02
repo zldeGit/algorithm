@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class34;
+package lu.zhang.code.大厂班.src.class34;
 
 // 有关这个游戏更有意思、更完整的内容：
 // https://www.bilibili.com/video/BV1rJ411n7ri

@@ -40,14 +40,14 @@ import lu.zhang.utils.Utils;
  */
 public class Leetcode92 {
 	public static ListNode reverseBetween(ListNode head, int left, int right) {
-		if (left==right) {
+		if (left == right) {
 			return head;
 		}
 		ListNode ans = new ListNode();
 		ans.next = head;
 		int count = 0;
 		ListNode ll = ans;
-		while (count < left-1) {
+		while (count < left - 1) {
 			ll = ll.next;
 			count++;
 		}
@@ -64,8 +64,8 @@ public class Leetcode92 {
 		int l = left;
 		while (l <= right) {
 			l++;
-			ListNode next= cur.next;
-			cur.next=pre;
+			ListNode next = cur.next;
+			cur.next = pre;
 			pre = cur;
 			cur = next;
 		}

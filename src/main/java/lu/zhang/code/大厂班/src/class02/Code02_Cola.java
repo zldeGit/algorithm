@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class02;
+package lu.zhang.code.大厂班.src.class02;
 
 public class Code02_Cola {
 	/*
@@ -60,6 +60,35 @@ public class Code02_Cola {
 	// 50元有b张
 	// 10元有c张
 	// 可乐单价x
+	public static int myPutTimes(int m, int a, int b, int c, int x) {
+		int[] mv = {100, 50, 10};
+		int[] mc = {c, b, a};
+		int preMv = 0;
+		int preMc = 0;
+		int ans = 0;
+		for (int i = 0; i < 3 && m > 0; i++) {
+			int curBuyOneCount = (x - preMv + mv[i] - 1) / mv[i];
+			if (mc[i]<curBuyOneCount) {
+				preMv += mv[i] * mc[i];
+				preMc += mc[i];
+				continue;
+			}
+			giveRest(mv, mc, i + 1, preMv + mv[i] * curBuyOneCount - x, 1);
+			ans += preMc + curBuyOneCount;
+			mc[i] -= curBuyOneCount;
+			m--;
+
+			int buyOneCount = (x + mv[i] - 1) / mv[i];
+			int buyOneRest =  buyOneCount * mv[i] - x ;
+			int buyCount = Math.min(m, mc[i] / buyOneCount);
+			giveRest(mv, mc, i + 1, buyOneRest, buyCount);
+			ans += buyOneCount * buyCount;
+			preMc = mc[i] - buyOneCount * buyCount;
+			preMv = preMc * mv[i];
+			m -= buyCount;
+		}
+		return m > 0 ? -1 : ans;
+	}
 	public static int putTimes(int m, int a, int b, int c, int x) {
 		//              0    1   2
 		int[] qian = { 100, 50, 10 };
@@ -122,6 +151,8 @@ public class Code02_Cola {
 	}
 
 	public static void main(String[] args) {
+		int ans2a = myPutTimes(5, 6, 7, 4, 160);
+
 		int testTime = 1000;
 		int zhangMax = 10;
 		int colaMax = 10;
@@ -135,7 +166,7 @@ public class Code02_Cola {
 			int c = (int) (Math.random() * zhangMax);
 			int x = ((int) (Math.random() * priceMax) + 1) * 10;
 			int ans1 = putTimes(m, a, b, c, x);
-			int ans2 = right(m, a, b, c, x);
+			int ans2 = myPutTimes(m, a, b, c, x);
 			if (ans1 != ans2) {
 				System.out.println("int m = " + m + ";");
 				System.out.println("int a = " + a + ";");

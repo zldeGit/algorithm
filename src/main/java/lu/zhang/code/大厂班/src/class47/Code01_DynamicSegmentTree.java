@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class47;
+package lu.zhang.code.大厂班.src.class47;
 
 // 只支持单点增加 + 范围查询的动态开点线段树（累加和）
 public class Code01_DynamicSegmentTree {

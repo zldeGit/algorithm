@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class12;
+package lu.zhang.code.大厂班.src.class12;
 
 // 测试链接 : https://leetcode.com/problems/regular-expression-matching/
 public class Code04_RegularExpressionMatch {

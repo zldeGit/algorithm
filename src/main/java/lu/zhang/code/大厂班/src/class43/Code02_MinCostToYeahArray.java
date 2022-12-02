@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class43;
+package lu.zhang.code.大厂班.src.class43;
 
 import java.util.Arrays;
 

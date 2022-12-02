@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class08;
+package lu.zhang.code.大厂班.src.class08;
 
 /*
  * 给定一个char[][] matrix，也就是char类型的二维数组，再给定一个字符串word，

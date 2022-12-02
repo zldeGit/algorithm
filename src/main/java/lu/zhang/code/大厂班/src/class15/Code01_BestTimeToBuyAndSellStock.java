@@ -1,4 +1,4 @@
-package lu.zhang.code.体系班.src.class15;
+package lu.zhang.code.大厂班.src.class15;
 
 // leetcode 121
 public class Code01_BestTimeToBuyAndSellStock {

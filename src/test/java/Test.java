@@ -1,4 +1,5 @@
 import jdk.nashorn.internal.parser.JSONParser;
+import sun.security.util.ArrayUtil;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -8,6 +9,8 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
+import java.util.Arrays;
+import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -17,14 +20,20 @@ import java.util.concurrent.Executors;
  */
 public class Test {
 	public static void main(String[] args) throws IOException {
-		SocketChannel socketChannel = SocketChannel.open();
-		socketChannel.connect(new InetSocketAddress( "192.168.18.20",10016));
-		ByteBuffer buf = ByteBuffer.allocate(1024);
-
-		int bytesRead = socketChannel.read(buf);
-		while (bytesRead != -1) {
-			socketChannel.read(buf);
-			System.out.println(buf);
+		Scanner in = new Scanner(System.in);
+		// 注意 hasNext 和 hasNextLine 的区别
+		in.nextLine();
+		String line = in.nextLine();
+		String[] arr =line.split(" ");
+		Arrays.sort(arr);
+		int imax = arr.length -1;
+		StringBuilder ans = new StringBuilder();
+		for(int i=0; ;i++){
+			if(i==imax){
+				System.out.println(ans.append(arr[i]));
+				break;
+			}
+			ans.append(arr[i]).append(" ");
 		}
 	}
 

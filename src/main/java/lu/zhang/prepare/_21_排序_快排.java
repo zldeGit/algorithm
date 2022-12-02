@@ -41,7 +41,7 @@ public class _21_排序_快排 {
 		Utils.swap(R, arr.length - 1, arr);
 	}
 
-	public static int[] partiTion(int[] arr, int less, int more) {
+	public static int[] partition(int[] arr, int less, int more) {
 		int i = less;
 		int L = less - 1;
 		int R = more;
@@ -67,7 +67,7 @@ public class _21_排序_快排 {
 		if (L >= R) {
 			return;
 		}
-		int[] equals = partiTion(arr, L, R);
+		int[] equals = partition(arr, L, R);
 		process(arr, L, equals[0] - 1);
 		process(arr, equals[1] + 1, R);
 	}
@@ -84,7 +84,7 @@ public class _21_排序_快排 {
 			Integer L = stackL.pop();
 			Integer R = stackR.pop();
 			if (L<R) {
-				int[] equals = partiTion(arr, L, R);
+				int[] equals = partition(arr, L, R);
 				stackL.push(L);
 				stackR.push(equals[0] - 1);
 				stackL.push(equals[1]+1);

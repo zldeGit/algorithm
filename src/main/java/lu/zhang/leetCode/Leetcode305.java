@@ -8,7 +8,7 @@ import java.util.List;
  * @date 2022/11/3
  */
 //https://leetcode.cn/problems/number-of-islands-ii/description/
-public class LeetCode305 {
+public class Leetcode305 {
 	public List<Integer> numIslands2(int m, int n, int[][] positions) {
 		UnioFind find = new UnioFind(m, n);
 		List<Integer> ans = new LinkedList<>();

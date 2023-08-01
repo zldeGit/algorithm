@@ -2,7 +2,7 @@ package lu.zhang.leetCode;
 
 import java.util.HashMap;
 
-public class LeetCode1128 {
+public class Leetcode1128 {
 	public int numEquivDominoPairs(int[][] dominoes) {
 		HashMap<String, Integer> map = new HashMap<>();
 		for (int i = 0; i < dominoes.length; i++) {
@@ -39,7 +39,7 @@ public class LeetCode1128 {
 
 	public static void main(String[] args) {
 		int[][] ints = {{1, 2}, {1, 2}, {1, 1}, {1, 2}, {2, 2}};
-		LeetCode1128 leetCode1128 = new LeetCode1128();
+		Leetcode1128 leetCode1128 = new Leetcode1128();
 		int i = leetCode1128.numEquivDominoPairs(ints);
 	}
 }

@@ -8,7 +8,7 @@ import java.util.PriorityQueue;
  * @description &{description}
  * @date 2020/12/28
  */
-public class LeetCode188 {
+public class Leetcode188 {
 	public int maxProfit(int k, int[] prices) {
 		int i1 = prices.length - 1;
 		int result = 0;
@@ -42,7 +42,7 @@ public class LeetCode188 {
 	}
 
 	public static void main(String[] args) {
-		LeetCode188 leetCode188 = new LeetCode188();
+		Leetcode188 leetCode188 = new Leetcode188();
 		int[] ints = {1,2,4,2,5,7,2,4,9,0};
 		leetCode188.maxProfit(2,ints);
 	}

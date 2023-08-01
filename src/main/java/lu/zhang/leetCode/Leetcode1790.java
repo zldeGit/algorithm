@@ -4,7 +4,7 @@ package lu.zhang.leetCode;
  * @author 张璐
  * @date 2022/10/12
  */
-public class leetcode1790 {
+public class Leetcode1790 {
 	public boolean areAlmostEqual(String s1, String s2) {
 		if (s1.length() != s2.length()) {
 			return false;

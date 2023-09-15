@@ -83,40 +83,41 @@
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
-	public int myAtoi(String s) {
-		s = s.trim();
-		int ans = 0;
-		boolean flag = false;
-		boolean isNegative = false;
-		int index = 0;
-		for (int i = 0; i < s.length();) {
-			char c = s.charAt(i);
-			if(flag){
-				if(c>'9'||c<'0'){
-					break;
-				}
-				if(ans>Integer.MAX_VALUE/10||(ans==Integer.MAX_VALUE/10&&c>'7')){
-					return isNegative?Integer.MIN_VALUE:Integer.MAX_VALUE;
-				}
-				ans =ans *10+(c-'0');
-				i++;
-			}else {
 
-			}
-		}
-		return isNegative?-ans:ans;
-	}
+  public int myAtoi(String s) {
+    s = s.trim();
+    int ans = 0;
+    boolean flag = false;
+    boolean isNegative = false;
+    int index = 0;
+    for (int i = 0; i < s.length(); ) {
+      char c = s.charAt(i);
+      if (flag) {
+        if (c > '9' || c < '0') {
+          break;
+        }
+        if (ans > Integer.MAX_VALUE / 10 || (ans == Integer.MAX_VALUE / 10 && c > '7')) {
+          return isNegative ? Integer.MIN_VALUE : Integer.MAX_VALUE;
+        }
+        ans = ans * 10 + (c - '0');
+        i++;
+      } else {
 
-	public static void main(String[] args) {
-		Solution solution = new Solution();
-		System.out.println(solution.myAtoi("42"));
-		System.out.println(solution.myAtoi("   -42"));
-		System.out.println(solution.myAtoi("4193 with words"));
-		System.out.println(solution.myAtoi("words and 987"));
-		System.out.println(solution.myAtoi("-91283472332"));
-		System.out.println(solution.myAtoi("3.14159"));
-		System.out.println(solution.myAtoi("+-12"));
-		System.out.println(solution.myAtoi("  0000000000012345678"));
-	}
+      }
+    }
+    return isNegative ? -ans : ans;
+  }
+
+  public static void main(String[] args) {
+    Solution solution = new Solution();
+    System.out.println(solution.myAtoi("42"));
+    System.out.println(solution.myAtoi("   -42"));
+    System.out.println(solution.myAtoi("4193 with words"));
+    System.out.println(solution.myAtoi("words and 987"));
+    System.out.println(solution.myAtoi("-91283472332"));
+    System.out.println(solution.myAtoi("3.14159"));
+    System.out.println(solution.myAtoi("+-12"));
+    System.out.println(solution.myAtoi("  0000000000012345678"));
+  }
 }
 //leetcode submit region end(Prohibit modification and deletion)

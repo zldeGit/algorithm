@@ -24,42 +24,42 @@ package lu.zhang.code.大厂班.src.class40;
 // arr长度 <= 200, arr中的值 <= 10^6
 public class Code05_AllSame {
 
-	public static int allSame(int[] arr) {
-		int ans = Integer.MAX_VALUE;
-		for (int i = 0; i < arr.length; i++) {
-			ans = Math.min(ans, process(arr, i - 1, arr[i], i + 1));
-		}
-		return ans;
-	}
+  public static int allSame(int[] arr) {
+    int ans = Integer.MAX_VALUE;
+    for (int i = 0; i < arr.length; i++) {
+      ans = Math.min(ans, process(arr, i - 1, arr[i], i + 1));
+    }
+    return ans;
+  }
 
-	// 左边arr[0..left]，如果left == -1，说明没有左边了
-	// 右边arr[right...n-1]，如果right == n，说明没有右边了
-	// 中间的值是midV，中间的值代表中间一整个部分的值，中间部分有可能是一个数，也可能是一堆数，但是值都为midV
-	// 返回arr都刷成一样的，最小代价是多少
-	// left 可能性 : N
-	// right 可能性 : N
-	// midV 可能性 : arr中的最大值！
-	public static int process(int[] arr, int left, int midV, int right) {
-		for (; left >= 0 && arr[left] == midV;) {
-			left--;
-		}
-		for (; right < arr.length && arr[right] == midV;) {
-			right++;
-		}
-		if (left == -1 && right == arr.length) {
-			return 0;
-		}
-		int p1 = Integer.MAX_VALUE;
-		if (left >= 0) {
-			p1 = process(arr, left - 1, arr[left], right) + 1;
-		}
-		int p2 = Integer.MAX_VALUE;
-		if (right < arr.length) {
-			p2 = process(arr, left, arr[right], right + 1) + 1;
-		}
-		return Math.min(p1, p2);
-	}
-	
-	// 如上的递归，请改动态规划，具体参考体系学习班，动态规划大章节！
+  // 左边arr[0..left]，如果left == -1，说明没有左边了
+  // 右边arr[right...n-1]，如果right == n，说明没有右边了
+  // 中间的值是midV，中间的值代表中间一整个部分的值，中间部分有可能是一个数，也可能是一堆数，但是值都为midV
+  // 返回arr都刷成一样的，最小代价是多少
+  // left 可能性 : N
+  // right 可能性 : N
+  // midV 可能性 : arr中的最大值！
+  public static int process(int[] arr, int left, int midV, int right) {
+    for (; left >= 0 && arr[left] == midV; ) {
+      left--;
+    }
+    for (; right < arr.length && arr[right] == midV; ) {
+      right++;
+    }
+    if (left == -1 && right == arr.length) {
+      return 0;
+    }
+    int p1 = Integer.MAX_VALUE;
+    if (left >= 0) {
+      p1 = process(arr, left - 1, arr[left], right) + 1;
+    }
+    int p2 = Integer.MAX_VALUE;
+    if (right < arr.length) {
+      p2 = process(arr, left, arr[right], right + 1) + 1;
+    }
+    return Math.min(p1, p2);
+  }
+
+  // 如上的递归，请改动态规划，具体参考体系学习班，动态规划大章节！
 
 }

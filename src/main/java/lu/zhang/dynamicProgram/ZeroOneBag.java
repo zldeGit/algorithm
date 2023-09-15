@@ -7,6 +7,4 @@ package lu.zhang.dynamicProgram;
 public class ZeroOneBag {
 
 
-
-
 }

@@ -2,33 +2,34 @@ package lu.zhang.code.大厂班.src.class34;
 
 public class Problem_0384_ShuffleAnArray {
 
-	class Solution {
-		private int[] origin;
-		private int[] shuffle;
-		private int N;
+  class Solution {
 
-		public Solution(int[] nums) {
-			origin = nums;
-			N = nums.length;
-			shuffle = new int[N];
-			for (int i = 0; i < N; i++) {
-				shuffle[i] = origin[i];
-			}
-		}
+    private int[] origin;
+    private int[] shuffle;
+    private int N;
 
-		public int[] reset() {
-			return origin;
-		}
+    public Solution(int[] nums) {
+      origin = nums;
+      N = nums.length;
+      shuffle = new int[N];
+      for (int i = 0; i < N; i++) {
+        shuffle[i] = origin[i];
+      }
+    }
 
-		public int[] shuffle() {
-			for (int i = N - 1; i >= 0; i--) {
-				int r = (int) (Math.random() * (i + 1));
-				int tmp = shuffle[r];
-				shuffle[r] = shuffle[i];
-				shuffle[i] = tmp;
-			}
-			return shuffle;
-		}
-	}
+    public int[] reset() {
+      return origin;
+    }
+
+    public int[] shuffle() {
+      for (int i = N - 1; i >= 0; i--) {
+        int r = (int) (Math.random() * (i + 1));
+        int tmp = shuffle[r];
+        shuffle[r] = shuffle[i];
+        shuffle[i] = tmp;
+      }
+      return shuffle;
+    }
+  }
 
 }

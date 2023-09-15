@@ -6,7 +6,8 @@ package lu.zhang.sort;
  * @date 2021/7/27
  */
 public class RadixSort {
-	public void radixSort(int[] arr) {
+
+  public void radixSort(int[] arr) {
 //		int max = 0;
 //		for (int i = 0; i < arr.length; i++) {
 //			max = Math.max(max, maxbits(arr[i]));
@@ -31,61 +32,61 @@ public class RadixSort {
 //			}
 //		}
 
-		int max = 0;
-		for (int i : arr) {
-			max = Math.max(maxbits(i), max);
-		}
-		int[] help = new int[arr.length];
-		for (int i = 1; i <= max; i++) {
-			int[] count = new int[10];
-			for (int j = 0; j < arr.length; j++) {
-				count[getDigit(arr[j], i)]++;
-			}
-			for (int j = 1; j < count.length; j++) {
-				count[j] += count[j - 1];
-			}
-			for (int j = arr.length - 1; j > -1; j--) {
-				help[count[getDigit(arr[j], i)]---1] = arr[j];
-			}
-			for (int j = 0; j < arr.length; j++) {
-				arr[j] = help[j];
-			}
-		}
-	}
+    int max = 0;
+    for (int i : arr) {
+      max = Math.max(maxbits(i), max);
+    }
+    int[] help = new int[arr.length];
+    for (int i = 1; i <= max; i++) {
+      int[] count = new int[10];
+      for (int j = 0; j < arr.length; j++) {
+        count[getDigit(arr[j], i)]++;
+      }
+      for (int j = 1; j < count.length; j++) {
+        count[j] += count[j - 1];
+      }
+      for (int j = arr.length - 1; j > -1; j--) {
+        help[count[getDigit(arr[j], i)]-- - 1] = arr[j];
+      }
+      for (int j = 0; j < arr.length; j++) {
+        arr[j] = help[j];
+      }
+    }
+  }
 
-	public int maxbits(int n) {
-		int res = 0;
-		while (n != 0) {
-			n /= 10;
-			res++;
-		}
-		return res;
-	}
+  public int maxbits(int n) {
+    int res = 0;
+    while (n != 0) {
+      n /= 10;
+      res++;
+    }
+    return res;
+  }
 
-	public int getDigit(int n, int d) {
-		return (n / (int) Math.pow(10, d - 1)) % 10;
-	}
+  public int getDigit(int n, int d) {
+    return (n / (int) Math.pow(10, d - 1)) % 10;
+  }
 
-	public static void main(String[] args) {
-		int length = 100;
-		int digit = 8;
-		int[] ints = new int[length];
-		for (int i = 0; i < ints.length; i++) {
-			int i1 = (int) (Math.random() * Math.pow(10, Math.random() * digit));
-			ints[i] = i1;
-		}
-		//2147483647
-		for (int i = 0; i < ints.length; i++) {
-			System.out.print(ints[i] + " ");
-		}
-		RadixSort radixSort = new RadixSort();
-		radixSort.radixSort(ints);
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		for (int i = 0; i < ints.length; i++) {
-			System.out.print(ints[i] + " ");
-		}
-	}
+  public static void main(String[] args) {
+    int length = 100;
+    int digit = 8;
+    int[] ints = new int[length];
+    for (int i = 0; i < ints.length; i++) {
+      int i1 = (int) (Math.random() * Math.pow(10, Math.random() * digit));
+      ints[i] = i1;
+    }
+    //2147483647
+    for (int i = 0; i < ints.length; i++) {
+      System.out.print(ints[i] + " ");
+    }
+    RadixSort radixSort = new RadixSort();
+    radixSort.radixSort(ints);
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    for (int i = 0; i < ints.length; i++) {
+      System.out.print(ints[i] + " ");
+    }
+  }
 }

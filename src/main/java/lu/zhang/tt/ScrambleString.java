@@ -23,6 +23,7 @@ public class ScrambleString {
 
   // str1[L1...R1] str2[L2...R2] 是否互为玄变串
   // 一定保证这两段是等长的！
+  //topo
   public static boolean process0(char[] str1, int L1, int R1, char[] str2, int L2, int R2) {
     if (L1 == R1) {
       return str1[L1] == str2[L2];
